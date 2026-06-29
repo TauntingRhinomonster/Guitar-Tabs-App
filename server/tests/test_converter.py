@@ -1,6 +1,6 @@
 """Manual test for convert_notes_to_tab."""
 import sys, os
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from services.converter import convert_notes_to_tab
 
@@ -17,11 +17,11 @@ print(f"Converted {len(tab)} elements:")
 for t in tab:
     print(f"  {t}")
 
-# C4 (midi 60) → string 3 (D, open=50), fret 10
-assert tab[0]['string'] == 3 and tab[0]['fret'] == 10 and tab[0]['flag'] is None
+# C4 (midi 60) → string 5 (B, open=59), fret 1 — lowest-fret position
+assert tab[0]['string'] == 5 and tab[0]['fret'] == 1 and tab[0]['flag'] is None
 
-# E4 (midi 64) → string 4 (G, open=55), fret 9
-assert tab[1]['string'] == 4 and tab[1]['fret'] == 9 and tab[1]['flag'] is None
+# E4 (midi 64) → string 6 (High e, open=64), fret 0 — open string
+assert tab[1]['string'] == 6 and tab[1]['fret'] == 0 and tab[1]['flag'] is None
 
 # Rest
 assert tab[2]['string'] is None and tab[2]['fret'] is None and tab[2]['flag'] == 'rest'

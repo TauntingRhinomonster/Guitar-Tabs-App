@@ -43,7 +43,7 @@ tmp.write(SAMPLE_MUSICXML)
 tmp.close()
 
 # Bootstrap Flask app context so current_app works
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 from app import create_app
 
 app = create_app()

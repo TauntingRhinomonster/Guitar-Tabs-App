@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.1 Partwise//EN"
+  "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="3.1">
+  <part-list>
+    <score-part id="P1"><part-name>Piano Right</part-name></score-part>
+    <score-part id="P2"><part-name>Piano Left</part-name></score-part>
+  </part-list>
+
+  <!-- Right hand: treble clef -->
+  <part id="P1">
+    <measure number="1">
+      <attributes>
+        <divisions>1</divisions>
+        <key><fifths>0</fifths></key>
+        <time><beats>4</beats><beat-type>4</beat-type></time>
+        <clef><sign>G</sign><line>2</line></clef>
+      </attributes>
+      <!-- Beat 1: E4 -->
+      <note><pitch><step>E</step><octave>4</octave></pitch><duration>1</duration><type>quarter</type></note>
+      <!-- Beat 2: D4 -->
+      <note><pitch><step>D</step><octave>4</octave></pitch><duration>1</duration><type>quarter</type></note>
+      <!-- Beat 3: rest -->
+      <note><rest/><duration>1</duration><type>quarter</type></note>
+      <!-- Beat 4: G4 -->
+      <note><pitch><step>G</step><octave>4</octave></pitch><duration>1</duration><type>quarter</type></note>
+    </measure>
+  </part>
+
+  <!-- Left hand: bass clef -->
+  <part id="P2">
+    <measure number="1">
+      <attributes>
+        <divisions>1</divisions>
+        <key><fifths>0</fifths></key>
+        <time><beats>4</beats><beat-type>4</beat-type></time>
+        <clef><sign>F</sign><line>4</line></clef>
+      </attributes>
+      <!-- Beat 1: C3 (MIDI 48, in range but lower than E4) -->
+      <note><pitch><step>C</step><octave>3</octave></pitch><duration>1</duration><type>quarter</type></note>
+      <!-- Beat 2: G2 (MIDI 43, in range but lower than D4) -->
+      <note><pitch><step>G</step><octave>2</octave></pitch><duration>1</duration><type>quarter</type></note>
+      <!-- Beat 3: F4 (MIDI 65, melody is here while treble rests) -->
+      <note><pitch><step>F</step><octave>4</octave></pitch><duration>1</duration><type>quarter</type></note>
+      <!-- Beat 4: C2 (MIDI 36, BELOW guitar range — should be dropped) -->
+      <note><pitch><step>C</step><octave>2</octave></pitch><duration>1</duration><type>quarter</type></note>
+    </measure>
+  </part>
+</score-partwise>
