@@ -1,5 +1,5 @@
 import './Upload.css'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer'
 import TabDocument, { type TabData } from './TabDocument'
 
@@ -14,6 +14,7 @@ interface LocationState {
 export default function DownloadPage() {
 
     const location = useLocation()
+    const navigate = useNavigate()
 
     const state = location.state as LocationState | null
 
@@ -97,6 +98,12 @@ export default function DownloadPage() {
 
             )}
 
+            <button className="upload-btn" onClick={() => navigate('/')}>
+
+                Back to Upload
+
+            </button>
+
         </div>
 
     )
@@ -105,6 +112,5 @@ export default function DownloadPage() {
 
 
 // To view server: 
-// cd server
-// .\venv\Scripts\Activate.ps1
-// python app.py
+// $profile
+// guitardev
