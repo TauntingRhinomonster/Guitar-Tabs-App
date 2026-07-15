@@ -143,6 +143,10 @@ The findings below are scoped to the team as a whole.
 
 ### What the team learned
 
+> 🚧 **DRAFT — pending team retrospective.** The points below are a starting draft
+> only. Luke will update this list after discussing with the team; do not treat it
+> as final.
+
 1. How to split a full-stack app into a clear frontend/backend contract (JSON over
    HTTP) so team members could work in parallel without blocking each other.
 2. That choosing the right library matters more than building everything from
