@@ -18,8 +18,7 @@ feature (see [Software Features](#software-features)).
 | ------------- | ---------------------------------------- |
 | Hunter        | Project Manager / Full-Stack Integrator  |
 | Rhino         | Frontend Developer                       |
-| Luke          | Backend Developer                        |
-| Jo            | MusicXML / Conversion Developer          |
+| Luke & Jo     | Backend Developers                       |
 | Emily         | Testing / Documentation / Rendering Lead |
 
 ---
@@ -132,8 +131,7 @@ kept in the list (unchecked); features we added beyond the original plan are not
 | ------------- | --------------------------------------------------------------------------------------------------------- |
 | Hunter        | Sprint planning, GitHub management, team coordination, merging pull requests, full-stack integration      |
 | Rhino         | React UI: upload page, result/download page, styling, and the in-browser tab viewer                       |
-| Luke          | Flask server setup, API routes, file upload/validation handling, CI, and fret-conversion logic            |
-| Jo            | MusicXML parsing with `music21`, pitch/chord mapping, and guitar tab conversion                            |
+| Luke & Jo     | Flask server setup, API routes, file upload/validation handling, CI, MusicXML parsing with `music21`, fret-conversion logic, and the chord parser/voicing engine |
 | Emily         | Test files, error testing, README/documentation, rendering research, and final demo prep                  |
 
 ---
