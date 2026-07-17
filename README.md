@@ -139,3 +139,29 @@ Returns the original uploaded MusicXML file as a downloadable attachment.
 | 3 | G3 | 55 |
 | 2 | B3 | 59 |
 | 1 (high) | E4 | 64 |
+
+
+## What we learned:
+- Communicate with others while working on a project
+- Music21
+- React
+- Python
+- Delegating tasks
+- Planning sprints
+- Git
+- GitHub
+
+## What can be improved
+- Cleaner code
+- Better knowledge of languages
+- Better vision of the project
+
+# Future Plans for this project
+- Front-end UI overhaul
+- More supported files
+- Cleaner renders for the front end
+- More string instruments supported
+- Sound output
+- MIDI file support
+- Hosting online
+
